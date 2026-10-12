@@ -23,10 +23,26 @@ class _MainScreenState extends State<MainScreen> {
         selectedIndex: _idx,
         onDestinationSelected: (i) => setState(() => _idx = i),
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.restaurant_menu_outlined), selectedIcon: Icon(Icons.restaurant_menu), label: 'DietDiary'),
-          NavigationDestination(icon: Icon(Icons.donut_small_outlined), selectedIcon: Icon(Icons.donut_small), label: 'Macros'),
-          NavigationDestination(icon: Icon(Icons.local_drink_outlined), selectedIcon: Icon(Icons.local_drink), label: 'Water'),
-          NavigationDestination(icon: Icon(Icons.insights_outlined), selectedIcon: Icon(Icons.insights), label: 'Weight'),
+          NavigationDestination(
+            icon: Icon(Icons.donut_large_outlined),
+            selectedIcon: Icon(Icons.donut_large),
+            label: 'Daily Ring',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.restaurant_menu_outlined),
+            selectedIcon: Icon(Icons.restaurant_menu),
+            label: 'Diary',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.insights_outlined),
+            selectedIcon: Icon(Icons.insights),
+            label: 'Trends',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.menu_book_outlined),
+            selectedIcon: Icon(Icons.menu_book),
+            label: 'Meal Plan',
+          ),
         ],
       ),
     );
